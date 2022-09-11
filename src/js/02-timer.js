@@ -37,9 +37,7 @@ function checkCorrectDate(selectedDate) {
     enableBtnStart();
 }
 
-function handlerBtnStart() {
-    //1. рассчитать остаток времени
-    //2. прорировать таймер
+function handlerBtnStart() {    
     timerId = setInterval(render, 1000);
 }
 
