@@ -6,8 +6,7 @@ let selectedDate = null;
 let timerId = null;
 const selectorRef = document.querySelector("#datetime-picker");
 const btnStartRef = document.querySelector('button[data-start]');
-timerRef = document.querySelectorAll('.field');
-//console.log(timerRef[0].innerText, timerRef[1], timerRef[2], timerRef[3]);
+const timerRef = document.querySelectorAll('.field');
 
 btnStartRef.addEventListener('click', handlerBtnStart);
 
@@ -28,7 +27,6 @@ function init() {
     flatpickr(selectorRef, options);
     disableBtnStart();    
 }
-
     
 function checkCorrectDate(selectedDate) { 
     if (selectedDate < options.defaultDate) {
